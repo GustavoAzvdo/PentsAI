@@ -30,21 +30,14 @@ O **PentsAI** é um agente inteligente de cibersegurança especializado em **Seg
 
 ## ⚡ Diferenciais: PentsAI vs. IAs Convencionais
 
-```mermaid
-graph TD
-    subgraph IA Convencional
-        Q1[Pergunta sobre invasão ou código] --> A1[Gera comandos genéricos sem contexto]
-        A1 --> A2[Sem severidade CVSS ou impacto formal]
-    end
-
-    subgraph PentsAI (Mentor Tático)
-        Q2[Pergunta / Submissão de Alvo] --> P1[Investiga Escopo, Portas e Versões]
-        P1 --> P2[Mapeia Causa-Raiz & CWE]
-        P2 --> P3[Classifica Risco: Impacto x Probabilidade = CVSS]
-        P3 --> P4[Associa IDs MITRE ATT&CK & Salas TryHackMe]
-        P4 --> P5[Fornece PoC Controlada em Lab & Remediação Defensiva]
-    end
-```
+| Etapa / Aspecto | IA Convencional (Genérica) | 🛡️ PentsAI (Mentor Ofensivo) |
+| :--- | :--- | :--- |
+| **Recepção da Dúvida** | Cospe comandos ou exploits sem saber onde serão rodados | **Investiga o escopo**: pergunta sobre portas, versões e ambiente de laboratório |
+| **Análise da Falha** | Aponta apenas que "o código está errado" | **Identifica a causa-raiz**: mapeia o fluxo *source-to-sink* e o identificador **CWE** |
+| **Avaliação de Risco** | Diz vagamente que é "grave" ou "perigoso" | **Calcula o risco**: avalia Impacto vs. Probabilidade e pontua via métricas **CVSS** |
+| **Referencial Prático** | Respostas teóricas desconectadas | Conecta o raciocínio com as salas e trilhas práticas do **TryHackMe** |
+| **Mapeamento MITRE** | Quase nunca correlaciona | Associa formalmente **Táticas e Técnicas do MITRE ATT&CK®** (ex: `T1190`, `T1595`) |
+| **Visão Pós-Exploração** | Para na invasão ou no script pronto | **Purple Team**: entrega PoC ética, reescreve o código seguro e orienta a detecção |
 
 ---
 
